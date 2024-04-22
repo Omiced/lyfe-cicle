@@ -28,6 +28,7 @@ export class ProductComponent
     OnDestroy
 {
   public isProductVisible: boolean = false;
+  public currentPrice: number = 10;
 
   constructor() {
     console.log('constructor chido xd');
@@ -55,5 +56,9 @@ export class ProductComponent
   }
   ngOnInit(): void {
     console.log('ngOnInit');
+  }
+
+  incresePrice() {
+    this.currentPrice++;
   }
 }
